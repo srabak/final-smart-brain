@@ -3,23 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "autoprefixer": "^10.3.1",
     "clarifai": "^2.9.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-particles-js": "^3.3.0",
     "react-scripts": "^4.0.1",
     "react-tilt": "^0.1.4",
+    "serve": "^12.0.0",
     "tachyons": "^4.12.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">0.3%",
+      "not ie 11",
       "not dead",
       "not op_mini all"
     ],
